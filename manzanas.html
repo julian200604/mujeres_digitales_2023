@@ -34,37 +34,59 @@
 
             <div class="col-9 container">
                 <div class="row">
-                    <div class="col-12 m-3">
-                        <button type="button" class="btn btn-primary m-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div class="d-flex col-12 m-3">
+                        <button type="button" class="btn btn-primary me-3" data-bs-toggle="modal" data-bs-target="#exampleModal3">
                             Registrar manzanas
-                    </button>        
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content d-flex justify-content-center align-items-center">
-                                <p class="fw-bold m-2">Cambiar contraseña</p><br>
-                          
-                                <input type="text" class="form-control" id="inputPassword" placeholder="Ingrese su contraseña actual" style="width: 300px;"><br>
-                          
-                                <input type="text" class="form-control" id="inputPassword" placeholder="Ingrese su contraseña nueva" style="width: 300px;"><br>
-                          
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                 <button type="button" class="btn btn-light">Guardar</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal -->
+                        </button>
+                        <input class="form-control me-2" type="search" placeholder="Buscar manzana" aria-label="Search" width="200px">
+      
+                        <button class="btn btn-outline-primary me-3" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg></button>
                     </div>
                     <div class="col-12 m-3 text-center">
                         <p class="fw-bold">Ubicación de las manzanas</p>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31895.117218947413!2d-75.64811041733296!3d2.1954457418866253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e24d98384178e01%3A0x9f68d7ef91701394!2zR2FyesOzbiwgSHVpbGE!5e0!3m2!1ses-419!2sco!4v1719280941022!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe class="p-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31895.117218947413!2d-75.64811041733296!3d2.1954457418866253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e24d98384178e01%3A0x9f68d7ef91701394!2zR2FyesOzbiwgSHVpbGE!5e0!3m2!1ses-419!2sco!4v1719280941022!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <p class="fw-bold">Manzanas de cuidado en Garzón</p>
+                        <div class="row">
+                            <div class="">
+
+                            </div>
+                            <div class="">
+
+                            </div>
+                            <div class="">
+                                
+                            </div>
+
+                        </div>
                     </div>
-    
-                   </div>
-               
+                </div>
               
             </div>
+
+                <!--Modal3-->
+                <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content d-flex justify-content-center align-items-center">
+                        <p class="fw-bold m-2">Registrar manzanas de cuidado</p><br>
+                        <p>Código</p>
+                        <input type="text" class="form-control" id="inputPassword" style="width: 300px;"><br>
+
+                        <p>Nombre</p>
+                        <input type="text" class="form-control" id="inputPassword" style="width: 300px;"><br>
+
+                        <p>Dirección</p>
+                        <input type="text" class="form-control" id="inputPassword" style="width: 300px;"><br>
+                        
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                          <button type="button" class="btn btn-primary">Guardar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Modal3-->
             
 
 
