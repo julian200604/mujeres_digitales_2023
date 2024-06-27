@@ -25,6 +25,12 @@
                     <li class="nav-item">
                         <a class="nav-link text-dark m-3 fw-bolder" href="manzanas.html">Manzanas</a>
                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link text-dark m-3 fw-bolder" href="servicios.html">Servicios</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link text-dark m-3 fw-bolder" href="mujeres_cuidadoras.html">Mujeres cuidadora</a>
+                    </li>
                 </ul>
             </div>
             <!-- Menu vertical -->
@@ -35,7 +41,7 @@
             <div class="col-9 container">
                 <div class="row">
                     <div class="d-flex col-12 m-3">
-                        <button type="button" class="btn btn-primary me-3" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                        <button type="button" class="btn btn-primary me-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             Registrar manzanas
                         </button>
                         <input class="form-control me-2" type="search" placeholder="Buscar manzana" aria-label="Search" width="200px">
@@ -49,14 +55,50 @@
                         <iframe class="p-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31895.117218947413!2d-75.64811041733296!3d2.1954457418866253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e24d98384178e01%3A0x9f68d7ef91701394!2zR2FyesOzbiwgSHVpbGE!5e0!3m2!1ses-419!2sco!4v1719280941022!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         <p class="fw-bold">Manzanas de cuidado en Garzón</p>
                         <div class="row">
-                            <div class="">
-
+                            <div class="col-4">
+                              <div class="card" style="width: 18rem;">
+                                <img src="img/cuadra1.png" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <p class="fw-bold">Código</p>
+                                    <p>1234567891</p>
+                                    <p class="fw-bold">Nombre</p>
+                                    <p>Manzana 1</p>
+                                    <p class="fw-bold">Dirección</p>
+                                    <p>Calle 1 / carrera 11b</p>
+                                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">Actualizar</a>
+                                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal3">Servicios</button>
+                                  </div>
+                              </div>
                             </div>
-                            <div class="">
-
+                            <div class="col-4">
+                                <div class="card" style="width: 18rem;">
+                                <img src="img/cuadra2.png" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <p class="fw-bold">Código</p>
+                                    <p>1234567892</p>
+                                    <p class="fw-bold">Nombre</p>
+                                    <p>Manzana 2</p>
+                                    <p class="fw-bold">Dirección</p>
+                                    <p>Calle 9a / carrera 8</p>
+                                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">Actualizar</a>
+                                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal4">Servicios</button>
+                                  </div>
+                              </div>
                             </div>
-                            <div class="">
-                                
+                            <div class="col-4">
+                                <div class="card" style="width: 18rem; height: 30rem;">
+                                <img src="img/cuadra3.png" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <p class="fw-bold">Código</p>
+                                    <p>1234567893</p>
+                                    <p class="fw-bold">Nombre</p>
+                                    <p>Manzana 3</p>
+                                    <p class="fw-bold">Dirección</p>
+                                    <p>Calle 8 / carrera 14</p>
+                                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">Actualizar</a>
+                                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal5">Servicios</button>
+                                  </div>
+                              </div>
                             </div>
 
                         </div>
@@ -65,11 +107,16 @@
               
             </div>
 
-                <!--Modal3-->
-                <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <!--Modal1-->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                       <div class="modal-content d-flex justify-content-center align-items-center">
                         <p class="fw-bold m-2">Registrar manzanas de cuidado</p><br>
+
+                        <p>Imagen</p>
+                        <a href="img" class="btn btn-primary" id="btnAbrirArchivos" type="file">Agregar Imagen</a><br>
+
+
                         <p>Código</p>
                         <input type="text" class="form-control" id="inputPassword" style="width: 300px;"><br>
 
@@ -86,7 +133,131 @@
                       </div>
                     </div>
                   </div>
+                  <!--Modal1-->
+
+                  <!--Modal2-->
+                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content d-flex justify-content-center align-items-center">
+                        <p class="fw-bold m-2">Actualizar manzanas de cuidado</p><br>
+                         <p>Imagen</p>
+                        <a href="img" class="btn btn-primary" id="btnAbrirArchivos" type="file">Agregar Imagen</a><br>
+
+
+                        <p>Código</p>
+                        <input type="text" class="form-control" id="inputPassword" style="width: 300px;"><br>
+
+                        <p>Nombre</p>
+                        <input type="text" class="form-control" id="inputPassword" style="width: 300px;"><br>
+
+                        <p>Dirección</p>
+                        <input type="text" class="form-control" id="inputPassword" style="width: 300px;"><br>
+                        
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                          <button type="button" class="btn btn-primary">Guardar</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                  <!--Modal2-->
+
+                    <!--Modal3-->
+                <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content d-flex justify-content-center align-items-center">
+                        <p class="fw-bold m-2">Servicios de manzanas de cuidado</p><br>
+
+                        <div class="row">
+                            <div class="col-6 ">
+                                <div class="card" style="width: 13rem;">
+                                  <div class="card-body">
+                                    <p class="fw-bold">Código</p>
+                                    <p>1234567891</p>
+                                    <p class="fw-bold">Nombre</p>
+                                    <p>Lavanderia</p>
+                                    <p class="fw-bold">Descripción</p>
+                                    <p>¡Bienvenida a nuestra lavandería, donde tu ropa recibe el cuidado que merece sin coste alguno! Disfruta de un ambiente acogedor y moderno, con todas las comodidades que necesitas. </p>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card" style="width: 13rem">
+                                  <div class="card-body">
+                                    <p class="fw-bold">Código</p>
+                                    <p>1234567892</p>
+                                    <p class="fw-bold">Nombre</p>
+                                    <p>Gimnasio</p>
+                                    <p class="fw-bold">Descripción</p>
+                                    <p>El lugar especialmente diseñado y equipado para que acudas a realizar una actividad física en diversas intensidades. El propósito es estimular tus músculos a través de ejercicios adecuados a tus necesidades y condiciones.</p>
+                                  </div><br>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
                   <!--Modal3-->
+
+                  <!--Modal4-->
+                <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content d-flex justify-content-center align-items-center">
+                        <p class="fw-bold m-2">Servicios de manzanas de cuidado</p><br>
+
+                        <div class="row">
+                            <div class="col-6 ">
+                                <div class="card" style="width: 13rem;">
+                                  <div class="card-body">
+                                    <p class="fw-bold">Código</p>
+                                    <p>1234567891</p>
+                                    <p class="fw-bold">Nombre</p>
+                                    <p>Zona de descanso</p>
+                                    <p class="fw-bold">Descripción</p>
+                                    <p>¡Relájate en nuestra zona de descanso, un espacio pensado exclusivamente para ti, completamente gratuito! Disfruta de un ambiente acogedor y tranquilo donde puedes recargar energías mientras esperas. ¡Tu comodidad es nuestra prioridad!</p>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                  <!--Modal4-->
+
+                   <!--Modal5-->
+                <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content d-flex justify-content-center align-items-center">
+                        <p class="fw-bold m-2">Servicios de manzanas de cuidado</p><br>
+
+                        <div class="row">
+                            <div class="col-6 ">
+                                <div class="card" style="width: 13rem;">
+                                  <div class="card-body">
+                                    <p class="fw-bold">Código</p>
+                                    <p>1234567891</p>
+                                    <p class="fw-bold">Nombre</p>
+                                    <p>Colegio</p>
+                                    <p class="fw-bold">Descripción</p>
+                                    <p>Descubre nuestro colegio, un lugar donde cada estudiante brilla con su propio potencial. Con aulas innovadoras, profesores apasionados y un ambiente que fomenta el crecimiento personal y académico. ¡Bienvenidos a un lugar donde el aprendizaje se convierte en una aventura inspiradora cada día!</p>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                  <!--Modal5-->
             
 
 
