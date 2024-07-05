@@ -3,7 +3,7 @@
 }
 
 .nav1 {
-    min-height: 100vh;
+    min-height: 200vh;
 }
 
 .img-fluid {
@@ -18,4 +18,12 @@
     margin-bottom: 1rem;
 }
 
+.menu_vertical {
+    background-color: rgb(20, 33, 61);
+    border: none;
+}
+
+.linea {
+    color: aliceblue;
+}
 

@@ -10,29 +10,29 @@
 <body>
         <div class="row">
             <!-- Menu vertical -->
-            <div class="col-3 menu_vertical">
-                <ul class="nav flex-column nav1 border">
+            <div class="col-3 menu_vertical btn-dark">
+              <ul class="nav flex-column nav1">
+                  <li class="nav-item">
+                      <a class="perfil text-light fw-bolder" href="perfil.html">
+                          <img src="img/usuario.png" alt="Logo" width="50" height="50" class="m-3">
+                          Perfil
+                      </a>
+                  </li>
+                  <hr class="linea">
+                  <li class="nav-item">
+                    <a class="nav-link text-light m-3 fw-bolder" href="municipio.html">Municipios</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-light m-3 fw-bolder" href="manzanas.html">Manzanas</a>
+                  </li>
                     <li class="nav-item">
-                        <a class="perfil text-dark fw-bolder" href="perfil.html">
-                            <img src="img/usuario.png" alt="Logo" width="50" height="50" class="m-3">
-                            Perfil
-                        </a>
-                    </li>
-                    <hr>
-                    <li class="nav-item">
-                      <a class="nav-link text-dark m-3 fw-bolder" href="municipio.html">Municipios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark m-3 fw-bolder" href="manzanas.html">Manzanas</a>
-                    </li>
-                      <li class="nav-item">
-                        <a class="nav-link text-dark m-3 fw-bolder" href="servicios.html">Servicios</a>
-                    </li>
-                     <li class="nav-item">
-                        <a class="nav-link text-dark m-3 fw-bolder" href="mujeres_cuidadoras.html">Mujeres cuidadora</a>
-                    </li>
-                </ul>
-            </div>
+                      <a class="nav-link text-light m-3 fw-bolder" href="servicios.html">Servicios</a>
+                  </li>
+                   <li class="nav-item">
+                      <a class="nav-link text-light m-3 fw-bolder" href="mujeres_cuidadoras.html">Mujeres cuidadora</a>
+                  </li>
+              </ul>
+          </div>
             <!-- Menu vertical -->
 
 
@@ -41,6 +41,7 @@
             <div class="col-9">
                 <div class="d-flex col-12 m-3">
                     </button>
+                    <a href="#" class="btn btn-primary me-3" data-bs-toggle="modal" data-bs-target="#exampleModal8">Agregar servicio</a>
                     <input class="form-control me-2" type="search" placeholder="Manzanas de cuidado en Garzón" aria-label="Search" width="200px">
   
                     <button class="btn btn-outline-primary me-3" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
@@ -49,153 +50,84 @@
                 </div>
                 <div class="col-12 m-3 text-center">
                     <p class="fw-bold">Servicios que ofrece cada manzana de cuidado</p>
-                    <div class="row">
-                        <div class="col-6 card">
-                            <p class="fw-bold p-3">Manzana 1</p>
-                            <img src="img/cuadra1.png" style="border-radius: 10px;" class="m-3 mx-auto d-block" width="500px">  
-                            <div class="d-flex justify-content-center align-items-center">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="card" style="width: 20rem;">
-                                          <div class="card-body">
-                                            <p class="fw-bold">Código</p>
-                                            <p>1234567891</p>
-                                            <p class="fw-bold">Nombre</p>
-                                            <p>Lavanderia</p>
-                                            <p class="fw-bold">Descripción</p>
-                                            <p>¡Bienvenida a nuestra lavandería, donde tu ropa recibe el cuidado que merece sin coste alguno! Disfruta de un ambiente acogedor y moderno, con todas las comodidades que necesitas. </p>
-                                            <p class="fw-bold text-center">Establecimiento que ofrece el servicio</p>
-                                            <p class="fw-bold">Imagen</p>
-                                            <img src="img/lavanderia.webp" width="200px" class="mx-auto d-block" style="border-radius: 10px;">
-                                            <p class="fw-bold">Código:</p>
-                                            <p>034901</p>
-                                            <p class="fw-bold">Nombre:</p>
-                                            <p>Lavanderia 100</p>
-                                            <p class="fw-bold">Responsable:</p>
-                                            <p>Victoria Lopez</p>
-                                            <p class="fw-bold">Dirección:</p>
-                                            <p>Calle 11b #20-14</p>
-                                          </div>
-                                          <div class="card-footer">
-                                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Actualizar</a>
-                                            <button type="button" class="btn btn-danger m-2" data-bs-toggle="modal" data-bs-target="#exampleModal2">Eliminar</button>
-                                          </div>
-                                      </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="card" style="width: 20rem">
-                                          <div class="card-body">
-                                            <p class="fw-bold">Código</p>
-                                            <p>1234567892</p>
-                                            <p class="fw-bold">Nombre</p>
-                                            <p>Gimnasio</p>
-                                            <p class="fw-bold">Descripción</p>
-                                            <p>El lugar especialmente diseñado y equipado para que acudas a realizar una actividad física en diversas intensidades. El propósito es estimular tus músculos a través de ejercicios adecuados a tus necesidades y condiciones.</p>
-                                            <p class="fw-bold text-center">Establecimiento que ofrece el servicio</p>
-                                            <p class="fw-bold">Imagen</p>
-                                            <img src="img/gimnasio.jpeg" width="200px" class="mx-auto d-block" style="border-radius: 10px;">
-                                            <p class="fw-bold">Código:</p>
-                                            <p>034902</p>
-                                            <p class="fw-bold">Nombre:</p>
-                                            <p>Gimnasio strong</p>
-                                            <p class="fw-bold">Responsable:</p>
-                                            <p>Maria Rodriguez</p>
-                                            <p class="fw-bold">Dirección:</p>
-                                            <p>Calle 1 #10-20</p>
-                                          </div>
-                                          <div class="card-footer">
-                                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Actualizar</a>
-                                            <button type="button" class="btn btn-danger m-2" data-bs-toggle="modal" data-bs-target="#exampleModal2">Eliminar</button>
-                                          </div>
-                                        </div>
-                                    </div>
+                    <hr>
+                    <div>
+                      <table class="table m-2 table-responsive">
+                          <thead>
+                            <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">Código</th>
+                              <th scope="col">Nombre</th>
+                              <th scope="col">Descripción</th>
+                              <th scope="col">Manzana</th>
+                              <th scope="col">Establecimiento</th>
+                              <th></th>
+                              <th></th>
+                            </tr>
+                          </thead>
+                          <tbody  class="table-group-divider">
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>1234567891</td>
+                              <td>Lavanderia</td>
+                              <td>¡Bienvenida a nuestra lavandería, donde tu ropa recibe el cuidado que merece sin coste alguno! Disfruta de un ambiente acogedor y moderno, con todas las comodidades que necesitas.</td>
+                              <td>1</td>
+                              <td><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal4">Ver</button></td>
+                              <td>
+                                <div class="mb-3 form-check text-bg">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1"></label>
                                 </div>
-                            </div>
-                            <div class="card-footer" >
-                                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">Agregar servicio</a>
-                            </div>
-                        </div>
-                        <div class="col-6 card">
-                            <p class="fw-bold p-3">Manzana 2</p>
-                            <img src="img/cuadra2.png" style="border-radius: 10px;" class="m-3 mx-auto d-block" width="500px">  
-                            <div class="modal-content d-flex justify-content-center align-items-center">
-                                <p class="fw-bold m-2">Servicios de manzanas de cuidado</p><br>
-                                <div class="row">
-                                    <div class="col-6 ">
-                                        <div class="card" style="width: 20rem;">
-                                          <div class="card-body">
-                                            <p class="fw-bold">Código</p>
-                                            <p>1234567891</p>
-                                            <p class="fw-bold">Nombre</p>
-                                            <p>Zona de descanso</p>
-                                            <p class="fw-bold">Descripción</p>
-                                            <p>¡Relájate en nuestra zona de descanso, un espacio pensado exclusivamente para ti, completamente gratuito! Disfruta de un ambiente acogedor y tranquilo donde puedes recargar energías mientras esperas. ¡Tu comodidad es nuestra prioridad!</p>
-                                            <p class="fw-bold text-center">Establecimiento que ofrece el servicio</p>
-                                            <p class="fw-bold">Imagen</p>
-                                            <img src="img/descanzo.jpg" width="200px" class="mx-auto d-block" style="border-radius: 10px;">
-                                            <p class="fw-bold">Código:</p>
-                                            <p>034902</p>
-                                            <p class="fw-bold">Nombre:</p>
-                                            <p>Zona de descanzo 1</p>
-                                            <p class="fw-bold">Responsable:</p>
-                                            <p>Manuela Beltran</p>
-                                            <p class="fw-bold">Dirección:</p>
-                                            <p>Calle 9a #10</p>
-                                          </div>
-                                          <div class="card-footer">
-                                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Actualizar</a>
-                                            <button type="button" class="btn btn-danger m-2" data-bs-toggle="modal" data-bs-target="#exampleModal2">Eliminar</button>
-                                          </div>
-                                        </div>
-                                    </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">2</th>
+                              <td>1234567892</td>
+                              <td>Gimnasio</td>
+                              <td>El lugar especialmente diseñado y equipado para que acudas a realizar una actividad física en diversas intensidades. El propósito es estimular tus músculos a través de ejercicios adecuados a tus necesidades y condiciones.</td>
+                              <td>1</td>
+                              <td><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal5">Ver</button></td>
+                              <td>
+                                <div class="mb-3 form-check text-bg">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1"></label>
                                 </div>
-                                <div class="card-footer">
-                                    <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">Agregar servicio</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">3</th>
+                              <td>1234567893</td>
+                              <td>Zona de descanso</td>
+                              <td>¡Relájate en nuestra zona de descanso, un espacio pensado exclusivamente para ti, completamente gratuito! Disfruta de un ambiente acogedor y tranquilo donde puedes recargar energías mientras esperas. ¡Tu comodidad es nuestra prioridad!</td>
+                              <td>2</td>
+                              <td><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal6">Ver</button></td>
+                              <td>
+                                <div class="mb-3 form-check text-bg">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1"></label>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-6 card">
-                            <p class="fw-bold p-3">Manzana 3</p>
-                            <img src="img/cuadra3.png" style="border-radius: 10px;" class="m-3 mx-auto d-block" width="500px">  
-                            <div class="modal-content d-flex justify-content-center align-items-center">
-                                <p class="fw-bold m-2">Servicios de manzanas de cuidado</p><br>
-                                <div class="row">
-                                    <div class="col-6 ">
-                                        <div class="card" style="width: 20rem;">
-                                          <div class="card-body">
-                                            <p class="fw-bold">Código</p>
-                                            <p>1234567891</p>
-                                            <p class="fw-bold">Nombre</p>
-                                            <p>Colegio</p>
-                                            <p class="fw-bold">Descripción</p>
-                                            <p>Descubre nuestro colegio, un lugar donde cada estudiante brilla con su propio potencial. Con aulas innovadoras, profesores apasionados y un ambiente que fomenta el crecimiento personal y académico. ¡Bienvenidos a un lugar donde el aprendizaje se convierte en una aventura inspiradora cada día!</p>
-                                            <p class="fw-bold text-center">Establecimiento que ofrece el servicio</p>
-                                            <p class="fw-bold">Imagen</p>
-                                            <img src="img/descanzo.jpg" width="200px" class="mx-auto d-block" style="border-radius: 10px;">
-                                            <p class="fw-bold">Código:</p>
-                                            <p>034902</p>
-                                            <p class="fw-bold">Nombre:</p>
-                                            <p>Zona de descanzo 1</p>
-                                            <p class="fw-bold">Responsable:</p>
-                                            <p>Manuela Beltran</p>
-                                            <p class="fw-bold">Dirección:</p>
-                                            <p>Calle 9a #10</p>
-                                          </div>
-                                          <div class="card-footer">
-                                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Actualizar</a>
-                                            <button type="button" class="btn btn-danger m-2" data-bs-toggle="modal" data-bs-target="#exampleModal2">Eliminar</button>
-                                          </div>
-                                        </div>
-                                    </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">4</th>
+                              <td>1234567894</td>
+                              <td>Colegio</td>
+                              <td>Descubre nuestro colegio, un lugar donde cada estudiante brilla con su propio potencial. Con aulas innovadoras, profesores apasionados y un ambiente que fomenta el crecimiento personal y académico. ¡Bienvenidos a un lugar donde el aprendizaje se convierte en una aventura inspiradora cada día!</td>
+                              <td>3</td>
+                              <td><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal7">Ver</button></td>
+                              <td>
+                                <div class="mb-3 form-check text-bg">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1"></label>
                                 </div>
-                            </div>
-                            <div class="card-footer">
-                                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">Agregar servicio</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                   
+                              </td>
+                            </tr>
+                          </tbody>
+                      </table>
+                  </div>
+                  <td><a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Actualizar</a></td>
+                  <td><button type="button" class="btn btn-danger m-2" data-bs-toggle="modal" data-bs-target="#exampleModal2">Eliminar</button></td>
+                            
 
                 <!--Modal1-->
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -209,9 +141,9 @@
                         <input type="text" class="form-control" id="inputPassword" style="width: 300px;"><br>
 
                         <p>Descripción:</p>
-                        <input type="text" class="form-control" id="inputPassword" style="width: 300px;"><br>
+                        <input type="text" class="form-control" id="inputPassword" style="width: 300px; margin-bottom: 30px;"><br>
 
-                        <p class="fw-bold">Establecimiento que ofrece el servicio</p>
+                        <p class="fw-bold">Establecimiento que ofrece el servicio</p><br>
 
                          <p>Imagen:</p>
                         <a href="img" class="btn btn-primary" id="btnAbrirArchivos" type="file">Agregar Imagen</a><br>
@@ -236,7 +168,7 @@
                       </div>
                     </div>
                 </div>
-                  <!--Modal1-->
+                <!--Modal1-->
 
                 <!--Modal2-->
                 <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -253,8 +185,8 @@
                       </div>
                     </div>
                   </div>
-                  
-                  <!--Modal2-->
+                <!--Modal2-->
+
                 <!--Modal3-->
                 <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
@@ -294,15 +226,181 @@
                       </div>
                     </div>
                 </div>
-                  <!--Modal3-->
+                <!--Modal3-->
+
+                <!--Modal4-->
+                <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content d-flex justify-content-center align-items-center">
+                      <p class="fw-bold m-2">Servicios de manzanas de cuidado</p><br>
+
+                      <div class="row">
+                          <div class="col-6 ">
+                              <div class="card" style="width: 13rem;">
+                                <div class="card-body">
+                                  <p class="fw-bold text-center">Establecimiento que ofrece el servicio</p>
+                                  <p class="fw-bold">Imagen:</p>
+                                  <img src="img/lavanderia.webp" width="150px" style="border-radius: 10px;">
+                                  <p class="fw-bold">Código:</p>
+                                  <p>034901</p>
+                                  <p class="fw-bold">Nombre:</p>
+                                  <p>Lavanderia 100</p>
+                                  <p class="fw-bold">Responsable:</p>
+                                  <p>Victoria Lopez</p>
+                                  <p class="fw-bold">Dirección:</p>
+                                  <p>Calle 11b #20-14</p>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Modal4-->
+
+                <!--Modal5-->
+                <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content d-flex justify-content-center align-items-center">
+                      <p class="fw-bold m-2">Servicios de manzanas de cuidado</p><br>
+
+                      <div class="row">
+                          <div class="col-6 ">
+                              <div class="card" style="width: 13rem;">
+                                <div class="card-body">
+                                  <p class="fw-bold text-center">Establecimiento que ofrece el servicio</p>
+                                  <p class="fw-bold">Imagen:</p>
+                                  <img src="img/gimnasio.jpeg" width="150px" style="border-radius: 10px;">
+                                  <p class="fw-bold">Código:</p>
+                                  <p>034902</p>
+                                  <p class="fw-bold">Nombre:</p>
+                                  <p>Gimnasio strong</p>
+                                  <p class="fw-bold">Responsable:</p>
+                                  <p>Maria Rodriguez</p>
+                                  <p class="fw-bold">Dirección:</p>
+                                  <p>Calle 1 #10-20</p>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Modal5-->
+
+                <!--Modal6-->
+                <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content d-flex justify-content-center align-items-center">
+                      <p class="fw-bold m-2">Servicios de manzanas de cuidado</p><br>
+
+                      <div class="row">
+                          <div class="col-6 ">
+                              <div class="card" style="width: 13rem;">
+                                <div class="card-body">
+                                  <p class="fw-bold text-center">Establecimiento que ofrece el servicio</p>
+                                  <p class="fw-bold">Imagen:</p>
+                                  <img src="img/descanzo.jpg" width="150px" style="border-radius: 10px;">
+                                  <p class="fw-bold">Código:</p>
+                                  <p>034903</p>
+                                  <p class="fw-bold">Nombre:</p>
+                                  <p>Zona de descanzo 1</p>
+                                  <p class="fw-bold">Responsable:</p>
+                                  <p>Manuela Beltran</p>
+                                  <p class="fw-bold">Dirección:</p>
+                                  <p>Calle 9a #10</p>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Modal6-->
 
                 
-            </div>
-            
+                <!--Modal7-->
+                <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content d-flex justify-content-center align-items-center">
+                      <p class="fw-bold m-2">Servicios de manzanas de cuidado</p><br>
+
+                      <div class="row">
+                          <div class="col-6 ">
+                              <div class="card" style="width: 13rem;">
+                                <div class="card-body">
+                                  <p class="fw-bold text-center">Establecimiento que ofrece el servicio</p>
+                                  <p class="fw-bold">Imagen:</p>
+                                  <img src="img/colegio.avif" width="150px" style="border-radius: 10px;">
+                                  <p class="fw-bold">Código:</p>
+                                  <p>034904</p>
+                                  <p class="fw-bold">Nombre:</p>
+                                  <p>Colegio Garzón</p>
+                                  <p class="fw-bold">Responsable:</p>
+                                  <p>Angie Beltran</p>
+                                  <p class="fw-bold">Dirección:</p>
+                                  <p>Calle 8 #10</p>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Modal7-->
+
+                <!--Modal8-->
+                <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content d-flex justify-content-center align-items-center">
+                      <p class="fw-bold m-2">Agregar servicio</p><br>
+                      <p>Código:</p>
+                      <input type="text" class="form-control" id="inputPassword" style="width: 300px;"><br>
+
+                      <p>Nombre:</p>
+                      <input type="text" class="form-control" id="inputPassword" style="width: 300px;"><br>
+
+                      <p>Descripción:</p>
+                      <input type="text" class="form-control" id="inputPassword" style="width: 300px;"><br>
+
+                      <p class="fw-bold">Establecimiento que ofrece el servicio</p>
+
+                       <p>Imagen:</p>
+                      <a href="img" class="btn btn-primary" id="btnAbrirArchivos" type="file">Agregar Imagen</a><br>
 
 
+                      <p>Código:</p>
+                      <input type="text" class="form-control" id="inputPassword" style="width: 300px;"><br>
 
+                      <p>Nombre:</p>
+                      <input type="text" class="form-control" id="inputPassword" style="width: 300px;"><br>
 
+                      <p>Responsable:</p>
+                      <input type="text" class="form-control" id="inputPassword" style="width: 300px;"><br>
+
+                      <p>Dirección:</p>
+                      <input type="text" class="form-control" id="inputPassword" style="width: 300px;"><br>
+                      
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Guardar</button>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <!--Modal8-->
 
         </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
