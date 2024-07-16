@@ -14,73 +14,50 @@
             <div class="col-3 menu_vertical btn-dark">
               <ul class="nav flex-column nav1">
                   <li class="nav-item">
-                      <a class="perfil text-light fw-bolder mt-5" href="perfil.html">
-                          <img src="img/usuario.png" alt="Logo" width="50" height="50" class="mt-1">
+                      <a class="perfil text-light fw-bolder" href="perfil.html">
+                          <img src="img/usuario.png" alt="Logo" width="50" height="50" class="m-3">
                           Perfil
                       </a>
                   </li>
                   <hr class="linea">
                   <li class="nav-item">
-                    <a class="nav-link text-light me-2 mt-5 fw-bolder" href="municipio.html">Municipios</a>
+                    <a class="nav-link text-light m-3 fw-bolder" href="municipio.html">Municipios</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link text-light me-2 mt-5 fw-bolder" href="manzanas.html">Manzanas</a>
+                      <a class="nav-link text-light m-3 fw-bolder" href="manzanas.html">Manzanas</a>
                   </li>
                     <li class="nav-item">
-                      <a class="nav-link text-light me-2 mt-5 fw-bolder" href="servicios.html">Servicios</a>
+                      <a class="nav-link text-light m-3 fw-bolder" href="servicios.html">Servicios</a>
                   </li>
                    <li class="nav-item">
-                      <a class="nav-link text-light me-2 mt-5 fw-bolder" href="mujeres_cuidadoras.html">Mujeres cuidadora</a>
+                      <a class="nav-link text-light m-3 fw-bolder" href="mujeres_cuidadoras.html">Mujeres cuidadora</a>
                   </li>
               </ul>
           </div>
             <!-- Menu vertical -->
-
-            <div class="col-9">
-              <nav class="navbar navbar-expand-lg bg-body-tertiary m-2 rounded">
-                <div class="container-fluid">
-                  <button class="navbar-toggler mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <button type="button" class="btn btn-primary me-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Registrar manzanas</button>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Reporte
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#" id="generatePdfBtn">pdf</a></li>
-                          <li><a class="dropdown-item" href="#" id="generateExcelBtn">Excel</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                      <button class="btn btn-primary" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                      </svg></button>
-                    </form>
-                  </div>
-                </div>
-              </nav>
-
-
+            <div class="col-9 table-responsive">
               <div class="d-flex col-12 m-3">
+               
+              <button id="generatePdfBtn" class="btn btn-danger mr-2 me-1">Generar PDF</button>
+              <button id="generateExcelBtn" class="btn btn-success me-1">Generar Excel</button>
+               <a href="#" class="btn btn-primary me-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Registrar manzanas</a>
+               <input class="form-control me-2" type="search" placeholder="Buscar manzanas" aria-label="Search" width="200px">
+ 
+               <button class="btn btn-outline-primary me-3" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+               <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+               </svg></button>
               </div>
               <p class="fw-bold text-center">Manzanas del cuidado</p><hr>
               <p class="fw-bold text-center">Ubicación de las manzanas</p>
               <div id="map-container" class="container d-flex align-items-center justify-content-center">
-                <div id="map-container">
-                  <iframe class="p-5 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31895.117218947413!2d-75.64811041733296!3d2.1954457418866253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e24d98384178e01%3A0x9f68d7ef91701394!2zR2FyesOzbiwgSHVpbGE!5e0!3m2!1ses-419!2sco!4v1719280941022!5m2!1ses-419!2sco" width="450" height="450" style="border-radius:10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div id="map">
+                  <iframe class="p-5 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31895.117218947413!2d-75.64811041733296!3d2.1954457418866253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e24d98384178e01%3A0x9f68d7ef91701394!2zR2FyesOzbiwgSHVpbGE!5e0!3m2!1ses-419!2sco!4v1719280941022!5m2!1ses-419!2sco" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
               </div>
               <p class="fw-bold text-center">Manzanas de cuidado en Garzón</p><br>
               <div class="row">
-                <div class="col mb-4">
-                  <div class="card text-center" style="width: 18rem; height: 35rem; margin-left: 30px;">
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="card text-center" style="width: 18rem; height: 35rem; margin-left: 90px;">
                     <img src="img/cuadra1.png" class="card-img-top" alt="...">
                       <div class="card-body">
                         <p class="fw-bold">Código</p>
@@ -95,8 +72,8 @@
                       </div>
                   </div>
                 </div>
-                <div class="col mb-4">
-                  <div class="card text-center" style="width: 18rem; height: 35rem; margin-left: 30px;">
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="card text-center" style="width: 18rem; height: 35rem; margin-left: 90px;">
                     <img src="img/cuadra2.png" class="card-img-top" alt="...">
                       <div class="card-body">
                         <p class="fw-bold">Código</p>
@@ -111,8 +88,8 @@
                       </div>
                   </div>
                 </div>
-                <div class="col mb-4">
-                  <div class="card text-center" style="width: 18rem; height: 35rem; margin-left: 30px;">
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="card text-center" style="width: 18rem; height: 35rem; margin-left: 90px;">
                     <img src="img/cuadra3.png" class="card-img-top" alt="..." height="180px">
                       <div class="card-body">
                         <p class="fw-bold">Código</p>
