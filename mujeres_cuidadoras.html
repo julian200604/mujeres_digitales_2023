@@ -3,51 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modulo principal</title>
+    <title>Mujeres cuidadoras</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
         <div class="row">
+
             <!-- Menu vertical -->
-            <div class="col-3 menu_vertical btn-dark">
-                <ul class="nav flex-column nav1">
+            <div class="col-3 menu_vertical">
+              <ul class="nav flex-column nav1">
+                  <li class="nav-item">
+                      <a class="perfil text-light fw-bolder mt-5" href="perfil.html">
+                          <img src="img/usuario.png" alt="Logo" width="50" height="50" class="mt-1">
+                          Perfil
+                      </a>
+                  </li>
+                  <hr class="linea">
+                  <li class="nav-item">
+                    <a class="nav-link text-light me-2 mt-5 fw-bolder" href="municipio.html">Municipios</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-light me-2 mt-5 fw-bolder" href="manzanas.html">Manzanas</a>
+                  </li>
                     <li class="nav-item">
-                        <a class="perfil text-light fw-bolder" href="perfil.html">
-                            <img src="img/usuario.png" alt="Logo" width="50" height="50" class="m-3">
-                            Perfil
-                        </a>
-                    </li>
-                    <hr class="linea">
-                    <li class="nav-item">
-                      <a class="nav-link text-light m-3 fw-bolder" href="municipio.html">Municipios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light m-3 fw-bolder" href="manzanas.html">Manzanas</a>
-                    </li>
-                      <li class="nav-item">
-                        <a class="nav-link text-light m-3 fw-bolder" href="servicios.html">Servicios</a>
-                    </li>
-                     <li class="nav-item">
-                        <a class="nav-link text-light m-3 fw-bolder" href="mujeres_cuidadoras.html">Mujeres cuidadora</a>
-                    </li>
-                </ul>
+                      <a class="nav-link text-light me-2 mt-5 fw-bolder" href="servicios.html">Servicios</a>
+                  </li>
+                   <li class="nav-item">
+                      <a class="nav-link text-light me-2 mt-5 fw-bolder" href="mujeres_cuidadoras.html">Mujeres cuidadora</a>
+                  </li>
+              </ul>
             </div>
             <!-- Menu vertical -->
 
-
-            
-
             <div class="col-9">
-              <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+              <!-- Nav Horizontal-->
+              <nav class="navbar navbar-expand-lg bg-body-tertiary m-2 rounded">
                 <div class="container-fluid">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <button class="navbar-toggler mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item">
-                        <button type="button" class="btn btn-primary me-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar mujer cuidadora</button>
+                        <button type="button" class="btn btn-primary me-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Registrar mujer cuidadora</button>
                       </li>
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -68,9 +68,12 @@
                   </div>
                 </div>
               </nav>
+              <!-- Nav Horizontal -->
 
-                <p class="fw-bold text-center mt-4">Mujeres cuidadoras</p><hr>
-                <table class="table text-center table-responsive">
+                <p class="fw-bold text-center">Mujeres cuidadoras</p><hr><br>
+
+                <div class="table-responsive">
+                  <table class="table table-bordered text-center">
                     <thead>
                         <tr>
                           <th scope="col">Tipo de Documento</th>
@@ -83,8 +86,7 @@
                           <th scope="col">Dirección</th>
                           <th scope="col">Ocupación</th>
                           <th scope="col">Servicio de interes</th>
-                          <th></th>
-                          <th></th>
+                          <th>Seleccionar</th>
                         </tr>
                     </thead>
 
@@ -145,10 +147,11 @@
                           </td>
                         </tr>
                     </tbody>
-                </table>
-                <td><a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">Actualizar</a></td>
-                <td><button type="button" class="btn btn-danger m-2" data-bs-toggle="modal" data-bs-target="#exampleModal2">Eliminar</button></td>
-                <td><button type="button" class="btn btn-warning m-2" data-bs-toggle="modal" data-bs-target="#exampleModal4" style="color: azure;">Asignar manzana</button></td>
+                  </table>
+                </div>
+                <button type="button" class="btn btn-primary m-1" data-bs-toggle="modal" data-bs-target="#exampleModal3" style="color: azure;">Actualizar</button>
+                <button type="button" class="btn btn-danger m-1" data-bs-toggle="modal" data-bs-target="#exampleModal2">Eliminar</button>
+                <button type="button" class="btn btn-success m-1" data-bs-toggle="modal" data-bs-target="#exampleModal4" style="color: azure;">Asignar manzana</button>
 
                 
               </div>
@@ -165,31 +168,31 @@
                       <option value="2">C.C</option>
                     </select><br>
 
-                    <p>Numero de Documento:</p>
+                    <p class="mt-3">Numero de Documento:</p>
                     <input type="number" class="form-control" id="inputPassword" style="width: 300px;"><br>
 
-                    <p>Nombres:</p>
+                    <p class="mt-3">Nombres:</p>
                     <input type="text" class="form-control" id="inputPassword" style="width: 300px;"><br>
 
-                    <p>Apellidos:</p>
+                    <p class="mt-3">Apellidos:</p>
                     <input type="text" class="form-control" id="inputPassword" style="width: 300px;"><br>
 
-                    <p>Teléfono:</p>
+                    <p class="mt-3">Teléfono:</p>
                     <input type="number" class="form-control" id="inputPassword" style="width: 300px;"><br>
 
-                    <p>Email:</p>
+                    <p class="mt-3">Email:</p>
                     <input type="text" class="form-control" id="inputPassword" style="width: 300px;"><br>
 
-                    <p>Ciudad:</p>
+                    <p class="mt-3">Ciudad:</p>
                     <input type="text" class="form-control" id="inputPassword" style="width: 300px;"><br>
 
-                    <p>Dirección:</p>
+                    <p class="mt-3">Dirección:</p>
                     <input type="text" class="form-control" id="inputPassword" style="width: 300px;"><br>
 
-                    <p>Ocupación:</p>
+                    <p class="mt-3">Ocupación:</p>
                     <input type="text" class="form-control" id="inputPassword" style="width: 300px;"><br>
 
-                    <p>Servicios de interes:</p>
+                    <p class="mt-3">Servicios de interes:</p>
                     <input type="text" class="form-control" id="inputPassword" style="width: 300px;"><br>
                     
                     <div class="modal-footer">
